@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- title of the website as well as meta tags for screen width adaptation below -->
+	<meta charset="UTF-8">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+	<title>Welcome to Aero Skylines!</title>
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+	<!-- link for awesome font using cdn website below -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	
+	<!-- link for custom CSS file below -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	
+	<!-- header section starting point -->
+	<header>
+
+		<div id="menu-bar" class="fas fa-bars"></div>
+		
+		<a href="#" class="logo"><span>A</span>ero <span>S</span>kylines</a>
+			<nav class="navbar">
+				<a href="#home">Home</a>
+				<a href="#book">Book</a>
+				<a href="#packages">Packages</a>
+				<a href="#services">Services</a>
+				<a href="#gallery">Gallery</a>
+				<a href="#review">Review</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		
+			<div class="icons">
+				<i class="fas fa-search" id="search-btn"></i>
+				<i class="fas fa-user" id="login-btn"></i>
+			</div>
+			
+			<form action="" class="search-bar-container">
+				<input type = "search" id="search-bar" placeholder="...">
+				<label for="search-bar" class="fas fa-search"></label>
+			</form>
+	
+
+	</header>
+	<!-- header section ending point -->
+
+	<!-- login form container -->
+	<div class="login-form-container">
+
+		<i class="fas fa-times" id="form-close"></i>
+
+		<form action="">
+			<h3>login</h3>
+			<input type="email" class="box" placeholder="enter your email">
+			<input type="password" class="box" placeholder="enter your password">
+			<input type="submit" value="login now" class="btn">
+			<input type="checkbox" id="remember">
+			<label for="remember">Remember me</label>
+			<p>Forget password? <a href="#">Click here</a></p>
+			<p>Don't have an account? <a href="#">Sign up now!</a></p>
+		</form>
+
+	</div>
+
+	<!-- home section starts here -->
+		<!-- CHANGE THIS SENTENCES TO OUR ORIGINAL CATCH PHRASE!!!! -->
+		<section class="home" id="home">
+			<div class="content">
+				<h3>Embrace the Thrill of Adventure</h3>
+				<p>Embark on New Adventures with Us, Discover the World Awaiting</p>
+				<a href="#packages" class="btn">discover more</a>
+			</div>
+
+			<div class="controls">
+				<span class="vid-btn active" data-src="vid-src/PALAWAN.mp4"></span>
+				<span class="vid-btn" data-src="vid-src/CORON.mp4"></span>
+				<span class="vid-btn" data-src="vid-src/CEBU.mp4"></span>
+			</div>
+
+			<!-- this is the home video background -->
+			<div class="video-container">
+				<video src="vid-src/PALAWAN.mp4" id="video-slider" loop autoplay muted></video>
+			</div>
+
+		</section>
+
+	<!-- home section ends here-->
+
+	<!-- book section starts -->
+
+	<section class="book" id="book">
+
+		<h1 class="heading">
+			<span>b</span>
+			<span>o</span>
+			<span>o</span>
+			<span>k</span>
+			<span class="space"></span>
+			<span>n</span>
+			<span>o</span>
+			<span>w</span>
+		</h1>
+
+		<div class="row">
+
+			<div class="images">
+				<img src="images/P-1.jpg" alt="">
+				
+			</div>
+
+			<form action="">
+				<div class="inputBox">
+					<h3>where to</h3>
+					<input type="text" placeholder="Place Name">
+				</div>
+				<div class="inputBox">
+					<h3>how many</h3>
+					<input type="number" placeholder="Number of Guest">
+				</div>
+				<div class="inputBox">
+					<h3>arrivals</h3>
+					<input type="date">
+				</div>
+					<div class="inputBox">
+						<h3>leaving</h3>
+						<input type="date">
+				</div>
+				<input type="submit" class="btn" value="book now">
+			</form>
+
+		</div>
+	
+	</section>
+
+	<!-- book section ends-->
+
+
+    <!-- packages section starts-->
+
+	 <section class="packages" id="packages">
+
+	 <h1 class="heading">
+		<span>p</span>
+		<span>a</span>
+		<span>c</span>
+		<span>k</span>
+		<span>a</span>
+		<span>g</span>
+		<span>e</span>
+		<span>s</span>
+	</h1>
+
+	<div class="box-container">
+
+		<div class="box">
+			<img src="images/P-2.jpg" alt="">
+			<div class="content">
+				<h3> <i class="fas fa-map-market-alt"></i> Banaue Rice Terraces </h3>
+				<p>The famous Banaue Rice Terraces once were just winding fields that laid embracing a mountain side.</p>
+				<div class="stars">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				</div>
+				<div class="price"> ₱90.00 <span>₱120.00</span> </div>
+				<a href="#book" class="btn"> book now</a>
+			</div>
+		</div>
+	
+
+		<div class="box">
+			<img src="images/P-3.jpg" alt="">
+			<div class="content">
+				<h3> <i class="fas fa-map-market-alt"> </i> Puerto Princesa River National Park </h3>
+				<p>The Puerto Princesa Subterranean River is the abode of nature lovers.</p>
+				<div class="stars">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+			</div>
+			<div class="price"> ₱90.00 <span>₱120.00</span> </div>
+			<a href="#book" class="btn"> book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="images/P-4.jpg" alt="">
+			<div class="content">
+				<h3> <i class="fas fa-map-market-alt"> </i> Siargao </h3>
+				<p>Siargao is known to be one of the famous places in the Philippines for surfing.</p>
+				<div class="stars">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+			</div>
+			<div class="price"> ₱90.00 <span>₱120.00</span> </div>
+			<a href="#book" class="btn"> book now</a>
+			</div>
+		</div>
+	
+		<div class="box">
+			<img src="images/P-5.jpg" alt="">
+			<div class="content">
+				<h3> <i class="fas fa-map-market-alt"> </i> Samal Island </h3>
+				<p>Samal Island is said to be one of the largest resort islands in the entire Philippines.</p>
+				<div class="stars">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+			</div>
+			<div class="price"> ₱90.00 <span>₱120.00</span> </div>
+			<a href="#book" class="btn"> book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="images/P-6.jpg" alt="">
+			<div class="content">
+				<h3> <i class="fas fa-map-market-alt"> </i> Coron Island </h3>
+				<p>Being the third largest island, Coron is one of the best places to visit in the Philippines.</p>
+				<div class="stars">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+			</div>
+			<div class="price"> ₱90.00 <span>₱120.00</span> </div>
+			<a href="#book" class="btn"> book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="images/P-7.jpg" alt="">
+			<div class="content">
+				<h3> <i class="fas fa-map-market-alt"> </i> Tagaytay </h3>
+				<p>Tagaytay is quite popular in scenic beauty and the comfort its weather provides.</p>
+				<div class="stars">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+			</div>
+			<div class="price"> ₱90.00 <span>₱120.00</span> </div>
+			<a href="#book" class="btn"> book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="images/P-8.jpg" alt="">
+			<div class="content">
+				<h3> <i class="fas fa-map-market-alt"> </i> Batan Island </h3>
+				<p>A historical hotspot from WWII, you can see several things like shipwrecks and others belonging to the Japanese.</p>
+				<div class="stars">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+			</div>
+			<div class="price"> ₱90.00 <span>₱120.00</span> </div>
+			<a href="#book" class="btn"> book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="images/P-9.jpg" alt="">
+			<div class="content">
+				<h3> <i class="fas fa-map-market-alt"> </i> Apo Island </h3>
+				<p>For exploring the beauty of coral reefs and marine life, Apo Island in the Philippines is unmatched.</p>
+				<div class="stars">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+			</div>
+			<div class="price"> ₱90.00 <span>₱120.00</span> </div>
+			<a href="#book" class="btn"> book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="images/P-10.jpg" alt="">
+			<div class="content">
+				<h3> <i class="fas fa-map-market-alt"> </i> Danao Adventure Park </h3>
+				<p>The eco-tourism destination of Danao Adventure Park is one of the perfect places to visit in the Philippines for fun.</p>
+				<div class="stars">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+			</div>
+			<div class="price"> ₱90.00 <span>₱120.00</span> </div>
+			<a href="#book" class="btn"> book now</a>
+			</div>
+		</div>
+	</div>	
+	
+</section>
+
+<!-- packages section ends-->
+
+<!-- services section starts-->
+
+<section class="services" id="services">
+	<section class="packages" id="packages">
+
+		<h1 class="heading">
+		   <span>s</span>
+		   <span>e</span>
+		   <span>r</span>
+		   <span>v</span>
+		   <span>i</span>
+		   <span>c</span>
+		   <span>e</span>
+		   <span>s</span>
+	   </h1>
+
+	<div class="box-container">
+
+		<div class="box">
+			<i class="fas fa-hotel"></i>
+			<h3>affordable hotel</h3>
+			<p>Find great deals on accommodations!</p>
+		</div>
+		<div class="box">
+			<i class="fas fa-utensils"></i>
+			<h3>food and dricks</h3>
+			<p>Satisfy your cravings while you travel</p>
+		</div>
+		<div class="box">
+			<i class="fas fa-bullhorn"></i>
+			<h3>safety guide</h3>
+			<p>Your safety is our priority</p>
+		</div>
+		<div class="box">
+			<i class="fas fa-globe-asia"></i>
+			<h3>around the world</h3>
+			<p>Explore endless destinations</p>
+		</div>
+		<div class="box">
+			<i class="fas fa-plane"></i>
+			<h3>fastest travel</h3>
+			<p>Get there in no time!</p>
+		</div><div class="box">
+			<i class="fas fa-hiking"></i>
+			<h3>adventures</h3>
+			<p>Your journey begins here</p>
+		</div>
+		
+	</div>
+
+</section>
+
+<!-- services section ends-->
+
+<!-- gallery section starts-->
+
+<section class="gallery" id="gallery">
+
+	<h1 class="heading">
+		<span>g</span>
+		<span>a</span>
+		<span>l</span>
+		<span>l</span>
+		<span>e</span>
+		<span>r</span>
+		<span>y</span>
+	</h1>
+
+	<div class="box-container">
+
+		<div class="box">
+			<img src="images/P-2.jpg" alt="">
+			<div class="content">
+				<h3>Banaue Rice Terraces</h3>
+				<p>The famous Banaue Rice Terraces once were just winding fields that laid embracing a mountain side.</p>
+				<a href="#packages"class="btn">see more</a>
+			</div>
+		</div>
+		<div class="box">
+			<img src="images/P-3.jpg" alt="">
+			<div class="content">
+				<h3>Puerto Princesa River Park</h3>
+				<p>The Puerto Princesa Subterranean River is the abode of nature lovers.</p>
+				<a href="#packages"class="btn">see more</a>
+			</div>
+		</div>
+		<div class="box">
+			<img src="images/P-4.jpg" alt="">
+			<div class="content">
+				<h3>Siargao</h3>
+				<p>Siargao is known to be one of the famous places in the Philippines for surfing.</p>
+				<a href="#packages"class="btn">see more</a>
+			</div>
+		</div>
+		<div class="box">
+			<img src="images/P-5.jpg" alt="">
+			<div class="content">
+				<h3>Samal Island</h3>
+				<p>Samal Island is said to be one of the largest resort islands in the entire Philippines.</p>
+				<a href="#packages"class="btn">see more</a>
+			</div>
+		</div>
+		<div class="box">
+			<img src="images/P-6.jpg" alt="">
+			<div class="content">
+				<h3>Coron Island</h3>
+				<p>Being the third largest island, Coron is one of the best places to visit in the Philippines.</p>
+				<a href="#packages"class="btn">see more</a>
+			</div>
+		</div>
+		<div class="box">
+			<img src="images/P-7.jpg" alt="">
+			<div class="content">
+				<h3>Tagaytay</h3>
+				<p>Tagaytay is quite popular in scenic beauty and the comfort its weather provides.</p>
+				<a href="#packages"class="btn">see more</a>
+			</div>
+		</div>
+		<div class="box">
+			<img src="images/P-8.jpg" alt="">
+			<div class="content">
+				<h3>Batan Island</h3>
+				<p>A historical hotspot from WWII, you can see several things like shipwrecks and others belonging to the Japanese.</p>
+				<a href="#packages"class="btn">see more</a>
+			</div>
+		</div>
+		<div class="box">
+			<img src="images/P-9.jpg" alt="">
+			<div class="content">
+				<h3>Apo Island</h3>
+				<p>For exploring the beauty of coral reefs and marine life, Apo Island in the Philippines is unmatched.</p>
+				<a href="#packages"class="btn">see more</a>
+			</div>
+		</div>
+		<div class="box">
+			<img src="images/P-10.jpg" alt="">
+			<div class="content">
+				<h3>Danao Adventure Park</h3>
+				<p>The eco-tourism destination of Danao Adventure Park is one of the perfect places to visit in the Philippines for fun</p>
+				<a href="#packages"class="btn">see more</a>
+			</div>
+		</div>
+
+	</div>
+
+</section>
+
+<!-- gallery section ends-->
+
+<!-- review section starts -->
+
+<sectiom class="review" id="review">
+
+	<h1 class="heading">
+		<span>r</span>
+		<span>e</span>
+		<span>v</span>
+		<span>i</span>
+		<span>e</span>
+		<span>w</span>
+	</h1>
+
+	<div class="swiper-container review-slider">
+		<div class="swiper-wrapper">
+
+			<div class="swiper-slide">
+				<div class="box">
+					<div class="img">
+						<img src="reviewers/r-jules.png" alt="">
+						<h3>Julius Lorenzo Ramboy</h3>
+						<p>Booking my flight through this website was a breeze.I found the best deals, and the interface is so user-friendly. Highly recommended!</p>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-slide">
+				<div class="box">
+					<div class="img">
+						<img src="reviewers/r-beast.jpg" alt="">
+						<h3>James Stephen Donaldson</h3>
+						<p>I've been using this website for years, and it never disappoints. The search options are extensive, and I love the real-time price updates.</p>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-slide">
+				<div class="box">
+					<div class="img">
+						<img src="reviewers/r-pewds.jpg" alt="">
+						<h3>Felix Arvid Ulf Kjellberg</h3>
+						<p>The customer service on this site is top-notch. They helped me with a last-minute change to my flight, and I couldn't be happier with the service.</p>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-slide">
+				<div class="box">
+					<div class="img">
+						<img src="reviewers/r-elon.jpg" alt="">
+						<h3>Elon Musk</h3>
+						<p>I appreciate the transparency of this website. No hidden fees, and the booking process is quick and easy. I've become a loyal customer.</p>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-slide">
+				<div class="box">
+					<div class="img">
+						<img src="reviewers/r-zoro.jpg" alt="">
+						<h3>Roronoa Zoro</h3>
+						<p>Why am I here?</p>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-slide">
+				<div class="box">
+					<div class="img">
+						<img src="reviewers/r-jk.jpg" alt="">
+						<h3>Juan Karlos Labajo</h3>
+						<p>Nakakapu--</p>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-slide">
+				<div class="box">
+					<div class="img">
+						<img src="reviewers/r-faker.jpg" alt="">
+						<h3>Lee Sang-hyeok</h3>
+						<p>This website is a lifesaver for frequent travelers. It's my go-to for booking flights. The filters and sorting options make it simple to find the best deals.</p>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section stars -->
+
+<section class="contact" id="contact">
+	<h1 class="heading">
+		<span>c</span>
+		<span>o</span>
+		<span>n</span>
+		<span>t</span>
+		<span>a</span>
+		<span>c</span>
+		<span>t</span>
+	</h1>
+
+	<div class="row">
+		<div class=image>
+			<img src="images/contact-logo.jpg" alt="">
+		</div>
+
+		<form action="">
+			<div class="inputbox">
+				<input type="text" placeholder="Name">
+				<input type="email" placeholder="Email">
+			</div>
+
+			<div class="inputbox">
+				<input type="number" placeholder="Number">
+				<input type="text" placeholder="Subject">
+			</div>
+			<textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+			<input type="submit" class="btn" value="Send Message">
+		</form>
+	</div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- brand section -->
+
+<section class="brand-container">
+
+	<div class="swiper-container brand-slider">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"><img src="brand/b-mcdo.png" alt=""></div>
+			<div class="swiper-slide"><img src="brand/b-aj.png" alt=""></div>
+			<div class="swiper-slide"><img src="brand/b-jabi.png" alt=""></div>
+			<div class="swiper-slide"><img src="brand/b-mi.png" alt=""></div>
+			<div class="swiper-slide"><img src="brand/b-t.png" alt=""></div>
+			<div class="swiper-slide"><img src="brand/b-as.jpg" alt=""></div>
+			<div class="swiper-slide"><img src="brand/b-geng.png" alt=""></div>
+			<div class="swiper-slide"><img src="brand/b-sx.png" alt=""></div>
+			<div class="swiper-slide"><img src="brand/b-7.png" alt=""></div>
+			<div class="swiper-slide"><img src="brand/b-pldt.png" alt=""></div>
+			<div class="swiper-slide"><img src="brand/b-mini.png" alt=""></div>
+		</div>
+	</div>
+
+</section>
+
+<!-- footer section -->
+<section class="footer">
+	<div class="box-container">
+		<div class="box">
+			<h3>About Us</h3>
+			<p>Your travel dreams, our commitment</p>
+		</div>
+		<div class="box">
+			<h3>Branch Locations</h3>
+			<a href="#">Manila</a>
+			<a href="#">Cebu</a>
+			<a href="#">Davao</a>
+			<a href="#">Caloocan</a>
+			<a href="#">Pasig</a>
+			<a href="#">Cagayan De Oro</a>
+		</div>
+		<div class="box">
+			<h3>Quick Links</h3>
+			<a href="#home">home</a>
+			<a href="#book">book</a>
+			<a href="#packages">packages</a>
+			<a href="#services">services</a>
+			<a href="#gallery">gallery</a>
+			<a href="#review">review</a>
+			<a href="#contact">contact</a>
+		</div>
+		<div class="box">
+			<h3>Follow Us</h3>
+			<a href="#">Facebook</a>
+			<a href="#">Instagram</a>
+			<a href="#">Twitter</a>
+		</div>
+	</div>
+		<h1 class="credit">Creadted by <span> Aero Skylines Group</span> | All rights reserved </h1>
+</section>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+	<!-- link for JavaScript file below -->
+	<script src="js/script.js"></script>
+
+</body>
+</html>
